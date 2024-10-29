@@ -6,6 +6,7 @@ import { MUI } from './mui';
 
 import { Route, Routes, Link } from 'react-router-dom';
 import { Fluent } from './fluent';
+import { Shoelace } from './shoelace';
 
 export function App() {
   return (
@@ -32,6 +33,9 @@ export function App() {
           <li>
             <Link to="/fluent">Fluent</Link>
           </li>
+          <li>
+            <Link to="/shoelace">Shoelace</Link>
+          </li>
         </ul>
       </div>
       <Routes>
@@ -47,6 +51,7 @@ export function App() {
         <Route path="/mui" element={<MUI />} />
         <Route path="/carbon" element={<Carbon />} />
         <Route path="/fluent" element={<Fluent />} />
+        <Route path="/shoelace" element={<Shoelace />} />
       </Routes>
       {/* END: routes */}
     </div>
