@@ -1,10 +1,11 @@
-import './app.module.scss';
+import './app.module.css';
 
 import NxWelcome from './nx-welcome';
 import { Carbon } from './carbon';
 import { MUI } from './mui';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import { Fluent } from './fluent';
 
 export function App() {
   return (
@@ -28,6 +29,9 @@ export function App() {
           <li>
             <Link to="/carbon">Carbon</Link>
           </li>
+          <li>
+            <Link to="/fluent">Fluent</Link>
+          </li>
         </ul>
       </div>
       <Routes>
@@ -42,6 +46,7 @@ export function App() {
         />
         <Route path="/mui" element={<MUI />} />
         <Route path="/carbon" element={<Carbon />} />
+        <Route path="/fluent" element={<Fluent />} />
       </Routes>
       {/* END: routes */}
     </div>
