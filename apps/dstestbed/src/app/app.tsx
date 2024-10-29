@@ -1,6 +1,7 @@
-import styles from './app.module.css';
+import './app.module.scss';
 
 import NxWelcome from './nx-welcome';
+import { Carbon } from './carbon';
 import { MUI } from './mui';
 
 import { Route, Routes, Link } from 'react-router-dom';
@@ -24,6 +25,9 @@ export function App() {
           <li>
             <Link to="/mui">MUI</Link>
           </li>
+          <li>
+            <Link to="/carbon">Carbon</Link>
+          </li>
         </ul>
       </div>
       <Routes>
@@ -36,7 +40,8 @@ export function App() {
             </div>
           }
         />
-        <Route path="/mui" element={<MUI></MUI>} />
+        <Route path="/mui" element={<MUI />} />
+        <Route path="/carbon" element={<Carbon />} />
       </Routes>
       {/* END: routes */}
     </div>
