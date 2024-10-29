@@ -1,14 +1,14 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css';
 
 import NxWelcome from './nx-welcome';
+import { MUI } from './mui';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="dstestbed" />
+      {/* <NxWelcome title="dstestbed" /> */}
 
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
@@ -22,7 +22,7 @@ export function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/page-2">Page 2</Link>
+            <Link to="/mui">MUI</Link>
           </li>
         </ul>
       </div>
@@ -36,14 +36,7 @@ export function App() {
             </div>
           }
         />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
+        <Route path="/mui" element={<MUI></MUI>} />
       </Routes>
       {/* END: routes */}
     </div>
