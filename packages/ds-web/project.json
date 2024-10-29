@@ -1,0 +1,19 @@
+{
+  "name": "ds-web",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/ds-web/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/ds-web",
+        "main": "packages/ds-web/src/index.ts",
+        "tsConfig": "packages/ds-web/tsconfig.lib.json",
+        "assets": ["packages/ds-web/*.md"]
+      }
+    }
+  }
+}
