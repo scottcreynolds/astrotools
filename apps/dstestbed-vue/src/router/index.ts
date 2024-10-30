@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'Vuetify',
       component: () => import('../views/Vuetify.vue'),
     },
+    {
+      path: '/fluentui',
+      name: 'Fluentui',
+      component: () => import('../views/Fluentui.vue'),
+    },
   ],
 });
 
