@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'Fluentui',
       component: () => import('../views/Fluentui.vue'),
     },
+    {
+      path: '/carbon',
+      name: 'Carbon',
+      component: () => import('../views/Carbon.vue'),
+    },
   ],
 });
 

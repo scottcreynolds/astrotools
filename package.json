@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "@carbon/react": "^1.69.0",
+    "@carbon/vue": "^3.0.22",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fluentui/react": "^8.121.7",

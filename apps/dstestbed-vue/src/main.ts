@@ -15,6 +15,14 @@ import {
   fluentTextField,
 } from '@fluentui/web-components';
 
+import CarbonVue3 from '@carbon/vue';
+import '@shoelace-style/shoelace/dist/themes/light.css';
+import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path';
+
+setBasePath(
+  'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/'
+);
+
 provideFluentDesignSystem().register(fluentButton(), fluentTextField());
 const customTheme: ThemeDefinition = {
   name: 'customTheme',
@@ -66,4 +74,4 @@ const vuetify = createVuetify({
 });
 
 // const app = createApp(App).use(vuetify).use(router).mount('#root');
-const app = createApp(App).use(router).mount('#root');
+const app = createApp(App).use(CarbonVue3).use(router).mount('#root');

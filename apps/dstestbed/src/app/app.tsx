@@ -1,12 +1,13 @@
 import './app.module.css';
 
-import NxWelcome from './nx-welcome';
+import '../lib/CurrentDate';
 import { Carbon } from './carbon';
 import { MUI } from './mui';
 
 import { Route, Routes, Link } from 'react-router-dom';
 import { Fluent } from './fluent';
 import { Shoelace } from './shoelace';
+import '../lib/CurrentDate';
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}
       <br />
+      <current-date />
       <hr />
       <br />
       <div role="navigation">
