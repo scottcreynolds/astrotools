@@ -1,0 +1,9 @@
+{
+  "name": "dstestbed-vue-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/dstestbed-vue-e2e/src",
+  "implicitDependencies": ["dstestbed-vue"],
+  "// targets": "to see all targets run: nx show project dstestbed-vue-e2e --web",
+  "targets": {}
+}
