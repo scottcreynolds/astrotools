@@ -18,7 +18,7 @@ function calc() {
       <h2 class="text-h2">Kepler's Third Law</h2>
       <div>
         <v-text-field type="number" v-model="semimajor"></v-text-field>
-        <v-btn @click="calc">Calculate Orbital Period</v-btn>
+        <v-btn variant="outlined" @click="calc">Calculate Orbital Period</v-btn>
       </div>
     </div>
   </main>

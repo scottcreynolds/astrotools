@@ -65,13 +65,13 @@ const customTheme: ThemeDefinition = {
 const vuetify = createVuetify({
   components,
   directives,
-  theme: {
-    defaultTheme: 'customTheme',
-    themes: {
-      customTheme,
-    },
-  },
+  // theme: {
+  //   defaultTheme: 'customTheme',
+  //   themes: {
+  //     customTheme,
+  //   },
+  // },
 });
 
-// const app = createApp(App).use(vuetify).use(router).mount('#root');
-const app = createApp(App).use(CarbonVue3).use(router).mount('#root');
+const app = createApp(App).use(vuetify).use(router).mount('#root');
+// const app = createApp(App).use(CarbonVue3).use(router).mount('#root');
